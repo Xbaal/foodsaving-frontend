@@ -3,7 +3,7 @@
     <div flex class="translucent-1"></div>
     <div flex="nogrow" layout="column" class="translucent-1">
       <div flex id="loginContent" layout-padding class="md-whiteframe-2dp">
-        <form login-form name="loginForm">
+        <form name="loginForm" ng-submit="$ctrl.login()">
           <h2>Login</h2>
           <md-input-container class="md-block">
             <label>Email</label>
@@ -21,6 +21,7 @@
           <md-button class="md-raised md-accent" type="submit">
             Login
           </md-button>
+
           <md-button ui-sref="signup">
             Sign up!
           </md-button>
